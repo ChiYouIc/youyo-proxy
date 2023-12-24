@@ -1,0 +1,1097 @@
+[
+  {
+    "path": "/api/admin/user/front/menus",
+    "response": "[\n  {\n    \"children\":[\n      {\n        \"code\":\"customerOrderManagement\",\n        \"component\":\"customer/orders/index\",\n        \"href\":\"/customer/manager/orders/pagelist\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":108,\n        \"name\":\"menu.customerOrderManagement\",\n        \"parentId\":42,\n        \"path\":\"/order/customerOrderManagement\",\n        \"spread\":false,\n        \"title\":\"menu.customerOrderManagement\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"sourcing/list\",\n        \"component\":\"goods/source/list\",\n        \"href\":\"/goods/source/list\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":192,\n        \"name\":\"menu.sourcing.list\",\n        \"parentId\":42,\n        \"path\":\"/order/sourcing/list\",\n        \"spread\":false,\n        \"title\":\"menu.sourcing.list\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"customerPrescriptionManagement\",\n        \"component\":\"customer/prescription/cuschasetime\",\n        \"href\":\"api/tenant/ordersGoods/getPurchaseTimeDataByCustomer \",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":172,\n        \"name\":\"menu.purchase.unusual\",\n        \"parentId\":42,\n        \"path\":\"/order/customerPrescriptionManagement\",\n        \"spread\":false,\n        \"title\":\"menu.purchase.unusual\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"customerLogisticsWeight\",\n        \"component\":\"logisticsweight/index\",\n        \"href\":\"/tenant/logisticsWeight/logisticsWeightList\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":176,\n        \"name\":\"logisticsWeight\",\n        \"parentId\":42,\n        \"path\":\"/order/customerLogisticsWeight\",\n        \"spread\":false,\n        \"title\":\"logisticsWeight\",\n        \"visible\":false\n      },\n      {\n        \"code\":\"customerPurchasePrice\",\n        \"component\":\"app/purchase/purchasePrice\",\n        \"href\":\"tenant/aliGoodsAmount/aliGoodsAmountList\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":177,\n        \"name\":\"purchasePrice\",\n        \"parentId\":42,\n        \"path\":\"/order/customerPurchasePrice\",\n        \"spread\":false,\n        \"title\":\"purchasePrice\",\n        \"visible\":false\n      },\n      {\n        \"code\":\"logisticsDeliveryTab\",\n        \"component\":\"purchase/prescription/logisticsDeliveryTab\",\n        \"href\":\"/International/logistics\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":186,\n        \"name\":\"InternationalLogistics\",\n        \"parentId\":42,\n        \"path\":\"/order/logisticsDeliveryTab\",\n        \"spread\":false,\n        \"title\":\"InternationalLogistics\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"orderReturn\",\n        \"component\":\"customer/orders/returns/index\",\n        \"href\":\"/customer/order/return/list\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":159,\n        \"name\":\"order.return.list\",\n        \"parentId\":42,\n        \"path\":\"/order/orderReturn\",\n        \"spread\":false,\n        \"title\":\"order.return.list\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"orderReturnByOverseas\",\n        \"component\":\"customer/orders/returns/packageReturn\",\n        \"href\":\"/customer/order/return/list\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":175,\n        \"name\":\"package.return\",\n        \"parentId\":42,\n        \"path\":\"/order/orderReturnByOverseas\",\n        \"spread\":false,\n        \"title\":\"package.return\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"CommodityStocks\",\n        \"component\":\"/dashboard/workbench/module/inProcurementWarehouseGoods\",\n        \"href\":\"/dashboard/workbench/module/inProcurementWarehouseGoods\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":190,\n        \"name\":\"CommodityStocks\",\n        \"parentId\":42,\n        \"path\":\"/workbench/home/warehouse\",\n        \"spread\":false,\n        \"title\":\"CommodityStocks\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"sales/analysis\",\n        \"component\":\"sales/analysis/index\",\n        \"href\":\"/customer/manager/billing/salesAnalysisDetail\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":191,\n        \"name\":\"menu.analysis\",\n        \"parentId\":42,\n        \"path\":\"/order/sales/analysis\",\n        \"spread\":false,\n        \"title\":\"menu.analysis\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"associate/list\",\n        \"component\":\"customer/orders/associate\",\n        \"href\":\"/orders/associate/list\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":155,\n        \"name\":\"associate\",\n        \"parentId\":42,\n        \"path\":\"/order/associate/list\",\n        \"spread\":false,\n        \"title\":\"associate\",\n        \"visible\":false\n      },\n      {\n        \"code\":\"sourcingOrderManagement\",\n        \"component\":\"goods/source/ordergoods\",\n        \"href\":\"/goods/source/ordergoods\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":135,\n        \"name\":\"productMapping\",\n        \"parentId\":42,\n        \"path\":\"/sourcingManager/sourcingOrderManagement\",\n        \"spread\":false,\n        \"title\":\"productMapping\",\n        \"visible\":false\n      }\n    ],\n    \"code\":\"orderManager\",\n    \"component\":\"Layout\",\n    \"href\":\"/base\",\n    \"icon\":\"el-icon-s-order\",\n    \"id\":42,\n    \"name\":\"menu.order\",\n    \"parentId\":-1,\n    \"path\":\"/order\",\n    \"spread\":false,\n    \"title\":\"menu.order\",\n    \"visible\":true\n  },\n  {\n    \"children\":[\n      {\n        \"code\":\"sourcing/list\",\n        \"component\":\"goods/source/list\",\n        \"href\":\"/goods/source/list\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":138,\n        \"name\":\"menu.sourcing.list\",\n        \"parentId\":134,\n        \"path\":\"/sourcingManager/sourcing/list\",\n        \"spread\":false,\n        \"title\":\"menu.sourcing.list\",\n        \"visible\":true\n      }\n    ],\n    \"code\":\"sourcingManager\",\n    \"component\":\"Layout\",\n    \"href\":\"/base\",\n    \"icon\":\"el-icon-picture\",\n    \"id\":134,\n    \"name\":\"menu.sourcing\",\n    \"parentId\":-1,\n    \"path\":\"/sourcingManager\",\n    \"spread\":false,\n    \"title\":\"menu.sourcing\",\n    \"visible\":true\n  },\n  {\n    \"children\":[\n      {\n        \"code\":\"collect-detail-list\",\n        \"component\":\"collector/detailShelfList\",\n        \"href\":\"/collector\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":93,\n        \"name\":\"menu.collector\",\n        \"parentId\":94,\n        \"path\":\"/collector/collect-list\",\n        \"spread\":false,\n        \"title\":\"menu.collector\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"collect-task\",\n        \"component\":\"collector/index\",\n        \"href\":\"/collector\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":92,\n        \"name\":\"menu.collectorTask\",\n        \"parentId\":94,\n        \"path\":\"/collector/collect-task\",\n        \"spread\":false,\n        \"title\":\"menu.collectorTask\",\n        \"visible\":false\n      },\n      {\n        \"code\":\"collect-list-task\",\n        \"component\":\"collector/task_list\",\n        \"href\":\"/collector\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":157,\n        \"name\":\"list\",\n        \"parentId\":94,\n        \"path\":\"/collector/collect-list-task\",\n        \"spread\":false,\n        \"title\":\"list\",\n        \"visible\":false\n      },\n      {\n        \"code\":\"sourceShelf\",\n        \"component\":\"goods/source/list\",\n        \"href\":\"/goods/source/list\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":153,\n        \"name\":\"shelf\",\n        \"parentId\":94,\n        \"path\":\"/collector/sourcing/shelf/list\",\n        \"spread\":false,\n        \"title\":\"shelf\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"collect-same\",\n        \"component\":\"collector/same/index\",\n        \"href\":\"/collector\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":95,\n        \"name\":\"matched\",\n        \"parentId\":94,\n        \"path\":\"/collector/collect-same\",\n        \"spread\":false,\n        \"title\":\"matched\",\n        \"visible\":true\n      }\n    ],\n    \"code\":\"collectorManager\",\n    \"component\":\"Layout\",\n    \"href\":\"/base\",\n    \"icon\":\"el-icon-collection\",\n    \"id\":94,\n    \"name\":\"shelf\",\n    \"parentId\":-1,\n    \"path\":\"/collector\",\n    \"spread\":false,\n    \"title\":\"shelf\",\n    \"visible\":true\n  },\n  {\n    \"children\":[\n      {\n        \"code\":\"goodsManager\",\n        \"component\":\"goods/goodsBaseInfo/index\",\n        \"href\":\"/goods/manger\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":54,\n        \"name\":\"menu.goodsManager\",\n        \"parentId\":43,\n        \"path\":\"/goods/manager\",\n        \"spread\":false,\n        \"title\":\"menu.goodsManager\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"albumManager\",\n        \"component\":\"album/index\",\n        \"href\":\"/album/index\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":96,\n        \"name\":\"menu.albumManager\",\n        \"parentId\":43,\n        \"path\":\"/goods/albumManager\",\n        \"spread\":false,\n        \"title\":\"menu.albumManager\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"bestSelling\",\n        \"component\":\"purchase/orders/components/hotSelling\",\n        \"href\":\"/tenant/orders/query/listHostSellingGoods\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":204,\n        \"name\":\"bestSellingProducts\",\n        \"parentId\":43,\n        \"path\":\"/goods/bestSelling\",\n        \"spread\":false,\n        \"title\":\"bestSellingProducts\",\n        \"visible\":true\n      },\n      {\n        \"code\":\"sampleManager\",\n        \"component\":\"goods/sample/index\",\n        \"href\":\"/sample/index\",\n        \"icon\":\"el-icon-tickets\",\n        \"id\":203,\n        \"name\":\"menu.sampleManager\",\n        \"parentId\":43,\n        \"path\":\"/goods/sampleManager\",\n        \"spread\":false,\n        \"title\":\"menu.sampleManager\",\n        \"visible\":true\n      }\n    ],\n    \"code\":\"goods\",\n    \"component\":\"Layout\",\n    \"href\":\"/base\",\n    \"icon\":\"el-icon-goods\",\n    \"id\":43,\n    \"name\":\"menu.commodity\",\n    \"parentId\":-1,\n    \"path\":\"/goods\",\n    \"spread\":false,\n    \"title\":\"menu.commodity\",\n    \"visible\":true\n  }\n]"
+  },
+  {
+    "path": "/api/admin/user/front/info",
+    "response": {
+      "company": {
+        "cid": 100,
+        "cname": "亿泰乐"
+      },
+      "elements": [
+        {
+          "code": "commodityCategoryManager:btn_add",
+          "menu": "menu.commoditycategory",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/category/add"
+        },
+        {
+          "code": "commodityCategoryManager:btn_edit",
+          "menu": "menu.commoditycategory",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/category/update"
+        },
+        {
+          "code": "commodityCategoryManager:btn_del",
+          "menu": "menu.commoditycategory",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/category/delete/{*}"
+        },
+        {
+          "code": "commodityCategoryManager:uri_view",
+          "menu": "menu.commoditycategory",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/category/getall"
+        },
+        {
+          "code": "commodityCategoryManager:btn_associate",
+          "menu": "menu.commoditycategory",
+          "method": "GET",
+          "name": "view_associate_property",
+          "type": "button",
+          "uri": "/tenant/goods-property/get/{*}"
+        },
+        {
+          "code": "commodityCategoryManager:btn_add_property",
+          "menu": "menu.commoditycategory",
+          "method": "POST",
+          "name": "add_property",
+          "type": "button",
+          "uri": "/tenant//goods-property"
+        },
+        {
+          "code": "commodityCategoryManager:btn_edit_property",
+          "menu": "menu.commoditycategory",
+          "method": "PUT",
+          "name": "edit_property",
+          "type": "button",
+          "uri": "/tenant/goods-property/{*}"
+        },
+        {
+          "code": "commodityCategoryManager:btn_del_property",
+          "menu": "menu.commoditycategory",
+          "method": "DELETE",
+          "name": "del_property",
+          "type": "button",
+          "uri": "/tenant/goods-property/{*}"
+        },
+        {
+          "code": "purchaseOrderManagement:btn_view",
+          "menu": "menu.purchaseOrderManagement",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/orders/{*}"
+        },
+        {
+          "code": "purchaseOrderManagement:btn_add",
+          "menu": "menu.purchaseOrderManagement",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/orders/{*}"
+        },
+        {
+          "code": "purchaseOrderManagement:btn_edit",
+          "menu": "menu.purchaseOrderManagement",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/orders/{*}"
+        },
+        {
+          "code": "purchaseOrderManagement:btn_del",
+          "menu": "menu.purchaseOrderManagement",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/orders/{*}"
+        },
+        {
+          "code": "shoppingCartManager:btn_edit",
+          "menu": "menu.cartManagement",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/shoppingCart/{*}"
+        },
+        {
+          "code": "shoppingCartManager:btn_del",
+          "menu": "menu.cartManagement",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/shoppingCart/{*}"
+        },
+        {
+          "code": "shoppingCartManager:btn_view",
+          "menu": "menu.cartManagement",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/shoppingCart/{*}"
+        },
+        {
+          "code": "supplierManager:btn_add",
+          "menu": "menu.supplierManager",
+          "method": "POST",
+          "name": "addSupplier",
+          "type": "button",
+          "uri": "/tenant/supplier/add"
+        },
+        {
+          "code": "supplierManager:btn_edit",
+          "menu": "menu.supplierManager",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/supplier/update/{*}"
+        },
+        {
+          "code": "supplierManager:btn_update_state",
+          "menu": "menu.supplierManager",
+          "method": "PUT",
+          "name": "update_state",
+          "type": "button",
+          "uri": "/tenant/supplier/state/{*}"
+        },
+        {
+          "code": "supplierManager:btn_crawl",
+          "menu": "menu.supplierManager",
+          "method": "GET",
+          "name": "crawl",
+          "type": "button",
+          "uri": "/tenant/supplier/third-platform/info"
+        },
+        {
+          "code": "supplierManager:uri_view",
+          "menu": "menu.supplierManager",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/supplier/list/page"
+        },
+        {
+          "code": "goodsBaseInfoManager:btn_edit",
+          "menu": "menu.goodsManager",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/goods/goodsBaseInfo/{*}"
+        },
+        {
+          "code": "goodsBaseInfoManager:btn_del",
+          "menu": "menu.goodsManager",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/goods/goodsBaseInfo/{*}"
+        },
+        {
+          "code": "goodsBaseInfoManager:btn_add",
+          "menu": "menu.goodsManager",
+          "method": "POST",
+          "name": "addGoods",
+          "type": "button",
+          "uri": "/goods/goodsBaseInfo"
+        },
+        {
+          "code": "appLogistics:btn_add",
+          "menu": "menu.appLogistics",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/selfLogisticsSettings"
+        },
+        {
+          "code": "appLogistics:btn_del",
+          "menu": "menu.appLogistics",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/selfLogisticsSettings/{*}"
+        },
+        {
+          "code": "appLogistics:btn_edit",
+          "menu": "menu.appLogistics",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/selfLogisticsSettings/{*}"
+        },
+        {
+          "code": "appLogisticsChannel:btn_add",
+          "menu": "menu.appLogistics",
+          "method": "POST",
+          "name": "bindNewChannels",
+          "type": "button",
+          "uri": "/selfLogisticsChannel"
+        },
+        {
+          "code": "appLogisticsChannel:btn_del",
+          "menu": "menu.appLogistics",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/selfLogisticsChannel/{*}"
+        },
+        {
+          "code": "appLogisticsChannel:btn_edit",
+          "menu": "menu.appLogistics",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/selfLogisticsChannel/{*}"
+        },
+        {
+          "code": "appLogisticsChannel:btn_change_status",
+          "menu": "menu.appLogistics",
+          "method": "POST",
+          "name": "editStatus",
+          "type": "button",
+          "uri": "/selfLogisticsChannel/{*}"
+        },
+        {
+          "code": "albumManager:btn_view",
+          "menu": "menu.albumManager",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/album/{*}"
+        },
+        {
+          "code": "albumManager:btn_add",
+          "menu": "menu.albumManager",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/album"
+        },
+        {
+          "code": "financeAcountManager:btn_add",
+          "menu": "menu.financeAccount",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/financeAcount"
+        },
+        {
+          "code": "financeAcountManager:btn_edit",
+          "menu": "menu.financeAccount",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/financeAcount/{*}"
+        },
+        {
+          "code": "financeAcountManager:btn_del",
+          "menu": "menu.financeAccount",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/financeAcount/{*}"
+        },
+        {
+          "code": "billPaymentManager:btn_add",
+          "menu": "menu.paymentBill",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/billpayment"
+        },
+        {
+          "code": "billPaymentManager:btn_edit",
+          "menu": "menu.paymentBill",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/billpayment/{*}"
+        },
+        {
+          "code": "billPaymentManager:btn_del",
+          "menu": "menu.paymentBill",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/billpayment/{*}"
+        },
+        {
+          "code": "billPaymentManager:view",
+          "menu": "menu.paymentBill",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/billpayment/{*}"
+        },
+        {
+          "code": "transRecordManager:btn_add",
+          "menu": "menu.transRecord",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/transRecord"
+        },
+        {
+          "code": "transRecordManager:btn_edit",
+          "menu": "menu.transRecord",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/transRecord/{*}"
+        },
+        {
+          "code": "transRecordManager:btn_del",
+          "menu": "menu.transRecord",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/transRecord/{*}"
+        },
+        {
+          "code": "transRecordManager:view",
+          "menu": "menu.transRecord",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/transRecord/{*}"
+        },
+        {
+          "code": "customerManager:btn_change_status",
+          "menu": "menu.customerlist",
+          "method": "POST",
+          "name": "editStatus",
+          "type": "button",
+          "uri": "/tenant/customer/{*}"
+        },
+        {
+          "code": "ImageSpaceManager:btn_upload",
+          "menu": "menu.imageSpace",
+          "method": "POST",
+          "name": "upload",
+          "type": "button",
+          "uri": "/tenant/image/upload"
+        },
+        {
+          "code": "imageSpaceManager:btn_del",
+          "menu": "menu.imageSpace",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/image/delete/{*}"
+        },
+        {
+          "code": "imageSpaceManager:uri_view",
+          "menu": "menu.imageSpace",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/image/list/page"
+        },
+        {
+          "code": "imageSpaceManager:btn_update_group",
+          "menu": "menu.imageSpace",
+          "method": "PUT",
+          "name": "update_group",
+          "type": "button",
+          "uri": "/tenant/image/update/group/goods/*"
+        },
+        {
+          "code": "imageSpaceManager:uri_view_space",
+          "menu": "menu.imageSpace",
+          "method": "GET",
+          "name": "view_space_info",
+          "type": "uri",
+          "uri": "/tenant/imageSpace/info"
+        },
+        {
+          "code": "chargeManager:btn_view",
+          "menu": "menu.charge",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/charge/{*}"
+        },
+        {
+          "code": "chargeManager:btn_add",
+          "menu": "menu.charge",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/charge/{*}"
+        },
+        {
+          "code": "chargeManager:btn_edit",
+          "menu": "menu.charge",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/charge/{*}"
+        },
+        {
+          "code": "customerManager:btn_login",
+          "menu": "menu.customerlist",
+          "method": "GET",
+          "name": "login",
+          "type": "button",
+          "uri": "/tenant/customer/login"
+        },
+        {
+          "code": "ruleManager:btn_view",
+          "menu": "menu.goodsManager",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/goodsrule/{*}"
+        },
+        {
+          "code": "ruleManager:btn_add",
+          "menu": "menu.goodsManager",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/goodsrule/{*}"
+        },
+        {
+          "code": "ruleManager:btn_edit",
+          "menu": "menu.goodsManager",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/tenant/goodsrule/{*}"
+        },
+        {
+          "code": "ruleManager:btn_del",
+          "menu": "menu.goodsManager",
+          "method": "DELETE",
+          "name": "delete",
+          "type": "button",
+          "uri": "/tenant/goodsrule/{*}"
+        },
+        {
+          "code": "customerManager:btn_permission",
+          "menu": "menu.customerlist",
+          "method": "GET",
+          "name": "permission",
+          "type": "button",
+          "uri": "/tenant/customer/permission"
+        },
+        {
+          "code": "customerOrderManagement:btn_recoveryOrder",
+          "menu": "menu.customerOrderManagement",
+          "method": "PUT",
+          "name": "recovery",
+          "type": "button",
+          "uri": "/customer/manager/orders/recovery/{*}"
+        },
+        {
+          "code": "customerOrderManagement:btn_closeOrder",
+          "menu": "menu.customerOrderManagement",
+          "method": "PUT",
+          "name": "CloseOrder",
+          "type": "button",
+          "uri": "/customer/manager/orders/close/{*}"
+        },
+        {
+          "code": "globalCountryManager:uri_view",
+          "menu": "menu.globalcountry",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/country/page"
+        },
+        {
+          "code": "globalCurrencyManager:uri_view",
+          "menu": "paymentSettings",
+          "method": "GET",
+          "name": "view",
+          "type": "uri",
+          "uri": "/tenant/currency/page"
+        },
+        {
+          "code": "appLogisticsWarehouse:btn_bind",
+          "menu": "menu.appLogistics",
+          "method": "POST",
+          "name": "associatedWarehouse",
+          "type": "button",
+          "uri": "/self-logistics-warehouses"
+        },
+        {
+          "code": "customerOrderManagement:btn_goods_stockout",
+          "menu": "menu.customerOrderManagement",
+          "method": "PUT",
+          "name": "stockout",
+          "type": "button",
+          "uri": "/customer/manager/orders/stockout/{*}"
+        },
+        {
+          "code": "customerOrderManagement:btn_updatePrice",
+          "menu": "menu.customerOrderManagement",
+          "method": "POST",
+          "name": "updatePrice",
+          "type": "button",
+          "uri": "/customer/manager/orders/updateOrdersAmount/{*}"
+        },
+        {
+          "code": "customerOrderManagement:btn_selected_closedOrder",
+          "menu": "menu.customerOrderManagement",
+          "method": "PUT",
+          "name": "selectedClosedOrder",
+          "type": "button",
+          "uri": "/manager/orders/close/batch"
+        },
+        {
+          "code": "customerOrderManagement:btn_selected_recoveryOrder",
+          "menu": "menu.customerOrderManagement",
+          "method": "PUT",
+          "name": "recoveryOrder",
+          "type": "button",
+          "uri": "/manager/orders/recovery/batch"
+        },
+        {
+          "code": "goodsAttributes:btn_save_associate_value",
+          "menu": "menu.goodsManager",
+          "method": "POST",
+          "name": "save",
+          "type": "button",
+          "uri": "/goods-property/goods/associate/{*}"
+        },
+        {
+          "code": "goodsAttributes:btn_save_associate_name",
+          "menu": "menu.goodsManager",
+          "method": "POST",
+          "name": "saveName",
+          "type": "button",
+          "uri": "/goods-property/system/property/save/{*}"
+        },
+        {
+          "code": "goodsAttribute:btn_save_associate_system_zh",
+          "menu": "menu.goodsManager",
+          "method": "POST",
+          "name": "save",
+          "type": "button",
+          "uri": "/goods-property/associate"
+        },
+        {
+          "code": "goodsAttribute:btn_save_associate_system_en",
+          "menu": "menu.goodsManager",
+          "method": "POST",
+          "name": "save",
+          "type": "button",
+          "uri": "/goods-property/translate/saveAssPropertyValue"
+        },
+        {
+          "code": "goodsAttributes:btn_update_name",
+          "menu": "menu.goodsManager",
+          "method": "PUT",
+          "name": "update",
+          "type": "button",
+          "uri": "/goods/goods-base-info/attributes/name/update/{*}"
+        },
+        {
+          "code": "goodsAttributes:btn_add_new",
+          "menu": "menu.goodsManager",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/goods/goods-base-info/attribute/new/{*}"
+        },
+        {
+          "code": "customerOrderManagement:btn_orderReplenishment",
+          "menu": "menu.customerOrderManagement",
+          "method": "POST",
+          "name": "addSupplementaryPayment",
+          "type": "button",
+          "uri": "/customer/manager/orders/createSupplePayment"
+        },
+        {
+          "code": "customerOrderManagement:btn_updateAddress",
+          "menu": "menu.customerOrderManagement",
+          "method": "POST",
+          "name": "change.address",
+          "type": "button",
+          "uri": "/customer/manager/orders/updateAddress"
+        },
+        {
+          "code": "customerOrderManagement:btn_calcQuotation",
+          "menu": "menu.customerOrderManagement",
+          "method": "POST",
+          "name": "calculateQuotation",
+          "type": "button",
+          "uri": "/customer/orders/calcQuotationByProduct/list"
+        },
+        {
+          "code": "customerOrderManagement:btn_updateNum",
+          "menu": "menu.customerOrderManagement",
+          "method": "POST",
+          "name": "updateQuantity",
+          "type": "button",
+          "uri": "/customer/manager/orders/updateOrdersGoodsNum"
+        },
+        {
+          "code": "customerOrderManagement:btn_updateLinkedOrder",
+          "menu": "menu.customerOrderManagement",
+          "method": "PUT",
+          "name": "更新已关联",
+          "type": "button",
+          "uri": "/customer_orders/update/linked/info/{*}"
+        },
+        {
+          "code": "purchaseOrderManagement:btn_1688Refund",
+          "menu": "menu.purchaseOrderManagement",
+          "method": "GET",
+          "name": "1688Refund",
+          "type": "uri",
+          "uri": "/tenant/thirdOrders/refund/{*}"
+        },
+        {
+          "code": "customerOrderManagement:btn_orderReCalcPrice",
+          "menu": "menu.customerOrderManagement",
+          "method": "PUT",
+          "name": "calculatePrice",
+          "type": "button",
+          "uri": "/orders/recacl/price/batch"
+        },
+        {
+          "code": "purchaseOrderManagement:btn_editSku",
+          "menu": "menu.purchaseOrderManagement",
+          "method": "PUT",
+          "name": "changeSku",
+          "type": "button",
+          "uri": "/tenant/orders/changeOrdersGoodsSku"
+        },
+        {
+          "code": "customerReturnOrder:btn_address",
+          "menu": "order.return.list",
+          "method": "PUT",
+          "name": "change.address",
+          "type": "button",
+          "uri": "/return/order/address/update"
+        },
+        {
+          "code": "globalCountryManager:btn_edit_phone",
+          "menu": "menu.globalcountry",
+          "method": "PUT",
+          "name": "edit",
+          "type": "button",
+          "uri": "/update/phone/{*}"
+        },
+        {
+          "code": "customerOrderManagement:btn_mark",
+          "menu": "menu.customerOrderManagement",
+          "method": "POST",
+          "name": "mark",
+          "type": "button",
+          "uri": "/customer/userBlockGoods/createUserBlockGoods"
+        },
+        {
+          "code": "customerReturnOrder:btn_forecast",
+          "menu": "order.return.list",
+          "method": "POST",
+          "name": "forecast",
+          "type": "button",
+          "uri": "/return/order/forecast"
+        },
+        {
+          "code": "customerReturnOrder:btn_resend",
+          "menu": "order.return.list",
+          "method": "POST",
+          "name": "resend",
+          "type": "button",
+          "uri": "/return/order/resend"
+        },
+        {
+          "code": "customerReturnOrder:btn_return",
+          "menu": "order.return.list",
+          "method": "POST",
+          "name": "return",
+          "type": "button",
+          "uri": "/return/order/return/batch"
+        },
+        {
+          "code": "customerReturnOrder:btn_release",
+          "menu": "order.return.list",
+          "method": "POST",
+          "name": "release",
+          "type": "button",
+          "uri": "/return/order/release/batch"
+        },
+        {
+          "code": "shoppingCartManager:btn_add",
+          "menu": "menu.cartManagement",
+          "method": "POST",
+          "name": "create",
+          "type": "button",
+          "uri": "/tenant/shoppingCart"
+        }
+      ],
+      "id": "180",
+      "menus": [
+        {
+          "code": "orderManager",
+          "menu": "menu.order",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "sourcingManager",
+          "menu": "menu.sourcing",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "collectorManager",
+          "menu": "shelf",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "goods",
+          "menu": "menu.commodity",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "purchaseManager",
+          "menu": "menu.purchase",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "capitalManager",
+          "menu": "capital",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "customer-manger",
+          "menu": "menu.customerConfig",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "support",
+          "menu": "resourceCenter",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "billManager",
+          "menu": "menu.management",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "analysisManager",
+          "menu": "menu.analysis",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/base"
+        },
+        {
+          "code": "customerOrderManagement",
+          "menu": "menu.customerOrderManagement",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/manager/orders/pagelist"
+        },
+        {
+          "code": "sourcing/list",
+          "menu": "menu.sourcing.list",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/goods/source/list"
+        },
+        {
+          "code": "customerPrescriptionManagement",
+          "menu": "menu.purchase.unusual",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/api/tenant/ordersGoods/getPurchaseTimeDataByCustomer "
+        },
+        {
+          "code": "customerLogisticsWeight",
+          "menu": "logisticsWeight",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/logisticsWeight/logisticsWeightList"
+        },
+        {
+          "code": "customerPurchasePrice",
+          "menu": "purchasePrice",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/aliGoodsAmount/aliGoodsAmountList"
+        },
+        {
+          "code": "logisticsDeliveryTab",
+          "menu": "InternationalLogistics",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/International/logistics"
+        },
+        {
+          "code": "orderReturn",
+          "menu": "order.return.list",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/order/return/list"
+        },
+        {
+          "code": "orderReturnByOverseas",
+          "menu": "package.return",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/order/return/list"
+        },
+        {
+          "code": "CommodityStocks",
+          "menu": "CommodityStocks",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/dashboard/workbench/module/inProcurementWarehouseGoods"
+        },
+        {
+          "code": "sales/analysis",
+          "menu": "menu.analysis",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/manager/billing/salesAnalysisDetail"
+        },
+        {
+          "code": "associate/list",
+          "menu": "associate",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/orders/associate/list"
+        },
+        {
+          "code": "sourcingOrderManagement",
+          "menu": "productMapping",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/goods/source/ordergoods"
+        },
+        {
+          "code": "goodsManager",
+          "menu": "menu.goodsManager",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/goods/manger"
+        },
+        {
+          "code": "albumManager",
+          "menu": "menu.albumManager",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/album/index"
+        },
+        {
+          "code": "bestSelling",
+          "menu": "bestSellingProducts",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/orders/query/listHostSellingGoods"
+        },
+        {
+          "code": "sampleManager",
+          "menu": "menu.sampleManager",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/sample/index"
+        },
+        {
+          "code": "purchaseOrderManagement",
+          "menu": "menu.purchaseOrderManagement",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/order"
+        },
+        {
+          "code": "purchasePrescriptionManagement",
+          "menu": "menu.purchasePrescriptionManagement",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/ordersGoods/getPurchaseTimeDatas"
+        },
+        {
+          "code": "customerRefundManagement",
+          "menu": "transactionRefund",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/manager/orders/transactionRefundList"
+        },
+        {
+          "code": "cartManagement",
+          "menu": "menu.cartManagement",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/shoppingCart/page"
+        },
+        {
+          "code": "1688RefundManagement",
+          "menu": "1688Refund",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/manager/orders/1688RefundList"
+        },
+        {
+          "code": "performanceManagement",
+          "menu": "performance",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/performance/getPerformance"
+        },
+        {
+          "code": "customer-list",
+          "menu": "menu.customerlist",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/manager/customer/list"
+        },
+        {
+          "code": "collect-detail-list",
+          "menu": "menu.collector",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/collector"
+        },
+        {
+          "code": "collect-task",
+          "menu": "menu.collectorTask",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/collector"
+        },
+        {
+          "code": "collect-list-task",
+          "menu": "list",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/collector"
+        },
+        {
+          "code": "sourceShelf",
+          "menu": "shelf",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/goods/source/list"
+        },
+        {
+          "code": "collect-same",
+          "menu": "matched",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/collector"
+        },
+        {
+          "code": "all_bill_statistics",
+          "menu": "all",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/billingRecord"
+        },
+        {
+          "code": "performanceManagement",
+          "menu": "profit",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/profit"
+        },
+        {
+          "code": "customerAnalysisManager",
+          "menu": "user",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/manager/billing/transInfoByDate"
+        },
+        {
+          "code": "capitalSummaryManager",
+          "menu": "menu.capitalSummary",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/manager/capitalSummary/page"
+        },
+        {
+          "code": "capitalFlowManager",
+          "menu": "menu.capitalFlow",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/customer/manager/accountSeq/page"
+        },
+        {
+          "code": "sourcing/list",
+          "menu": "menu.sourcing.list",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/goods/source/list"
+        },
+        {
+          "code": "noticeManagement",
+          "menu": "messages",
+          "method": "GET",
+          "name": "访问",
+          "type": "menu",
+          "uri": "/tenant/notice/noticeList"
+        }
+      ],
+      "name": "我是大魔王11111111111111111",
+      "proxy": false,
+      "roleCode": "itRole",
+      "roles": "技术部",
+      "username": "owen.chi@etailerhub.com"
+    }
+  }
+]
