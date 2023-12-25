@@ -23,20 +23,24 @@ func main() {
 	proxy := youyoproxy.NewHttpProxy()
 
 	list := readFilterResponseConfig(config)
-	for _, l := range list {
-		proxy.RespHandlers = append(proxy.RespHandlers, youyoproxy.FuncRespHandler(func(resp *http.Response) *http.Response {
+	hs := make([]youyoproxy.RespHandler, len(list))
+	for i, l := range list {
+		p := l.Path
+		r := l.Response
+		hs[i] = youyoproxy.FuncRespHandler(func(resp *http.Response) *http.Response {
 			path := resp.Request.URL.Path
-			if strings.EqualFold(path, l.Path) {
-				proxy.Info("overwrite response: %s", l.Path)
-				marshal, _ := json.Marshal(l.Response)
+			if strings.EqualFold(path, p) {
+				proxy.Info("overwrite response: %s", p)
+				marshal, _ := json.Marshal(r)
 				buffer := bytes.NewBuffer(marshal)
 				resp.Body = io.NopCloser(buffer)
 				return resp
 			}
 
 			return resp
-		}))
+		})
 	}
+	proxy.RespHandlers = hs
 
 	proxy.Info("Start youyo http proxy in %s", port)
 	log.Fatal(http.ListenAndServe(":"+port, proxy))
