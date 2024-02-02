@@ -4,17 +4,24 @@ import (
 	"bytes"
 	"encoding/json"
 	"flag"
+	"golang.org/x/sync/errgroup"
 	"io"
 	"log"
 	"net/http"
 	"os"
 	youyoproxy "proxy"
+	"proxy/web"
 	"strings"
+	"time"
 )
 
 var (
 	port   string
 	config string
+)
+
+var (
+	g errgroup.Group
 )
 
 func main() {
@@ -42,8 +49,31 @@ func main() {
 	}
 	proxy.RespHandlers = hs
 
-	proxy.Info("Start youyo http proxy in %s", port)
-	log.Fatal(http.ListenAndServe(":"+port, proxy))
+	webServer := &http.Server{
+		Addr:         ":8080",
+		Handler:      web.Router(),
+		ReadTimeout:  5 * time.Second,
+		WriteTimeout: 10 * time.Second,
+	}
+
+	proxyServer := &http.Server{
+		Addr:         ":" + port,
+		Handler:      youyoproxy.NewHttpProxy(),
+		ReadTimeout:  5 * time.Second,
+		WriteTimeout: 10 * time.Second,
+	}
+
+	g.Go(func() error {
+		return webServer.ListenAndServe()
+	})
+
+	g.Go(func() error {
+		return proxyServer.ListenAndServe()
+	})
+
+	if err := g.Wait(); err != nil {
+		log.Fatal(err)
+	}
 }
 
 func parseFlag() {

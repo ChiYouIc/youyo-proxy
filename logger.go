@@ -3,6 +3,7 @@ package youyoproxy
 import (
 	"fmt"
 	"log"
+	"proxy/web"
 	"time"
 )
 
@@ -20,6 +21,7 @@ func init() {
 
 func (proxy *HttpProxy) Info(format string, v ...any) {
 	format = prefix("info", colorInfo) + format + "\n"
+	web.WC.WriteMessage(fmt.Sprintf(format, v))
 	log.Printf(format, v...)
 }
 
